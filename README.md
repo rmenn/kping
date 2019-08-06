@@ -32,7 +32,14 @@ You should see a few timeouts occuring
 
 
 #### Exercise - Add HealthChecks to the application. Endpoint is `/healthz`
+health checks should remove the container from the service when it returns a non 2XX-3XX responce
 
+to test this
+
+`curl -X POST <endpoint>/healthz`
+
+this will set the healthz endpoint to return an internal server error
+the pod will be terminated and a new pod brought in its place
 
 #### Run curl and update the image 0.0.3
 
