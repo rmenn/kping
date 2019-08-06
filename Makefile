@@ -5,7 +5,7 @@ export GOARCH:=amd64
 export GOOS:=linux
 export USER=rmenn
 export REPOSITORY=kping
-export VERSION=0.0.2
+export VERSION=0.0.3
 LDFLAGS=-X main.version=$(VERSION)
 
 all: build docker
