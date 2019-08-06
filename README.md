@@ -39,7 +39,7 @@ to test this
 `curl -X POST <endpoint>/healthz`
 
 this will set the healthz endpoint to return an internal server error
-the pod will be terminated and a new pod brought in its place
+the pod will be restarted
 
 #### Run curl and update the image 0.0.3
 
