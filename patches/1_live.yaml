@@ -1,0 +1,13 @@
+--- 
+spec: 
+  template: 
+    spec: 
+      containers: 
+        - 
+          name: kping
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 80
+              scheme: HTTP
+            initialDelaySeconds: 10

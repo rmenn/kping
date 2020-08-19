@@ -4,7 +4,7 @@ Simple webapp to demonstrate kubernetes health check failures & rolling deployme
 
 #### Start the image on the cluster
 
-`kubectl run test image=rmenn/kping:0.0.1`
+`kubectl create deployment test --image=rmenn/kping:0.0.1`
 
 #### Expose the deployment as a service
 
