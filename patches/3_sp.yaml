@@ -7,8 +7,9 @@ spec:
           name: kping
           startupProbe:
             httpGet:
-              path: /healthz
+              path: /start
               port: 80
               scheme: HTTP
             failureThreshold: 30
             periodSeconds: 10
+            timeoutSeconds: 600
